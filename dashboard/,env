@@ -1,0 +1,4 @@
+# URL API untuk Nuxt (Ganti saat mau build/deploy)
+# NUXT_PUBLIC_API_BASE="http://localhost:8080"
+NUXT_PUBLIC_API_BASE="https://labs-api-dcfmis.kotabogor.go.id"
+<!-- === NUXT DASHBOARD ADMIN - DCFMIS - Saeful Hamdi (shamdi.rh@gmail.com) === -->

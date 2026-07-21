@@ -97,19 +97,10 @@ DCFMIS terdiri dari tiga aplikasi utama.
 | Komponen | Teknologi |
 |----------|------------|
 | Backend API | Golang 1.25.1 |
-<<<<<<< HEAD
-=======
-| Framework | Gin |
-| ORM | GORM |
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
 | Database | MySQL 8.0.45 |
 | Dashboard | Nuxt 4 |
 | Frontend | Vue 3 |
 | Mobile | Flutter |
-<<<<<<< HEAD
-=======
-| Authentication | JWT |
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
 | Server | Ubuntu 24.04 LTS |
 
 ---
@@ -117,14 +108,12 @@ DCFMIS terdiri dari tiga aplikasi utama.
 # 📂 Struktur Folder
 
 ```text
-DCFMIS/
+dcfmis/
 │
 ├── README.md
 ├── LICENSE
 ├── docs/
-<<<<<<< HEAD
 │   └── images/
-│
 ├── api/
 │   ├── config/
 │   |   └── database.go
@@ -139,25 +128,9 @@ DCFMIS/
 │   ├── models/
 │   |   └── piket.go
 │   ├── main.go
-=======
-│   ├── images/
-│   ├── api.md
-│   ├── deployment.md
-│   └── database.md
-│
-├── golang-api/
-│   ├── cmd/
-│   ├── config/
-│   ├── handlers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
-│   ├── go.mod
-│   └── go.sum
+│   └── api.md
 │
 ├── dashboard/
-<<<<<<< HEAD
 │   ├── app/
 │   |   ├── middleware/
 │   |   |   └── auth.ts
@@ -175,7 +148,7 @@ DCFMIS/
 │   |   |   ├── index.vue
 │   |   |   └── login.json
 │   |   └── app.vue
-    ├── plugins/
+|   ├── plugins/
 │   |   └── api.js    
 │   └── public/
 │
@@ -196,35 +169,12 @@ DCFMIS/
     |   └── main.dart
     └── pubspec.yaml
 ```
-=======
-│   ├── assets/
-│   ├── components/
-│   ├── composables/
-│   ├── pages/
-│   ├── public/
-│   ├── app.vue
-│   └── package.json
-│
-└── mobile/
-    ├── android/
-    ├── ios/
-    ├── lib/
-    ├── assets/
-    └── pubspec.yaml
-```
-
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
----
 
 # 🔐 Keamanan
 
 Implementasi keamanan pada aplikasi meliputi:
 
-<<<<<<< HEAD
 - 2 Step Authentication
-=======
-- JWT Authentication
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
 - Role Based Access Control (RBAC)
 - AES Encryption untuk data sensitif
 - Password Hashing (bcrypt)
@@ -251,11 +201,7 @@ Data yang dienkripsi:
 ## Backend
 
 ```bash
-<<<<<<< HEAD
 cd api
-=======
-cd golang-api
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
 go mod tidy
 go run .
 ```
@@ -287,7 +233,6 @@ flutter run
 ### Dashboard Login
 
 ![Login](docs/images/login.png)
-<<<<<<< HEAD
 ![Login](docs/images/login2.png)
 
 ### Dashboard Utama dan Modul-modul;
@@ -299,24 +244,14 @@ flutter run
 
 ### Mobile
 
-![Mobile](docs/images/login1.png)
-![Mobile](docs/images/login2.png)
-![Mobile](docs/images/splash.png)
-![Mobile](docs/images/Dashboard.png)
-![Mobile](docs/images/Manajemen-Piket.png)
-![Mobile](docs/images/Manajemen-Server.png)
-![Mobile](docs/images/Manajemen-IP.png)
-![Mobile](docs/images/TentangAplikasi.png)
-=======
-
-### Dashboard Utama
-
-![Dashboard](docs/images/dashboard.png)
-
-### Mobile
-
-![Mobile](docs/images/mobile.png)
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
+![Mobile](docs/images/login1.jpeg)
+![Mobile](docs/images/login2.jpeg)
+![Mobile](docs/images/splash.jpeg)
+![Mobile](docs/images/dashboard.jpeg)
+![Mobile](docs/images/manajemen-piket.jpeg)
+![Mobile](docs/images/manajemen-server.jpeg)
+![Mobile](docs/images/manajemen-IP.jpeg)
+![Mobile](docs/images/tentang-aplikasi.jpeg)
 
 ---
 
@@ -349,33 +284,16 @@ Demo12345!
 - [x] User Management
 - [x] Monitoring Server
 - [x] Data Center Checklist
-<<<<<<< HEAD
 - [ ] Reset Password
 - [ ] CCTV Monitoring
 - [ ] Backup Management
 - [ ] Report
-=======
-- [ ] Notification WA
-- [ ] Monitoring SNMP
-- [ ] Grafana Integration
-- [ ] Backup Management
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4
 
 ---
 
 # 👨‍💻 Pengembang
 
 **Saeful Hamdi**
-<<<<<<< HEAD
 📧 shamdi.rh@gmail.com
 
 ---
-=======
-
-Pranata Komputer Mahir  
-Dinas Komunikasi dan Informatika Kota Bogor
-
-📧 shamdi.rh@gmail.com
-
----
->>>>>>> ccc2a7349ee3d15d1921ce0c324db03bff92d0c4

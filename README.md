@@ -1,56 +1,272 @@
-# Data Center Facility Management Information System (DCFMIS)
+# 🖥️ Data Center Facility Management Information System (DCFMIS)
 
-Aplikasi Data Center Facility Management Information System (DCFMIS) ini dibangun untuk memudahkan Tim Pusat Data dalam melakukan pengecekan rutin harian fasilitas Pusat Data: Suhu Ruangan Server, PC operator, CCTV Pusat Data, Kondisi AC Ruangan, Panel Listrik Utama, Indikator UPS dan Baterai, Indikator Panel Distribusi Listrik, Kondisi Rack Server, serta Catatan Kejadian Harian.
+![Status](https://img.shields.io/badge/Status-Development-orange)
+![Go](https://img.shields.io/badge/Golang-1.25.1-00ADD8)
+![Nuxt](https://img.shields.io/badge/Nuxt-4.4.8-00DC82)
+![Flutter](https://img.shields.io/badge/Flutter-3.38-blue)
+![Database](https://img.shields.io/badge/MySQL-8.0.45-blue)
 
-Beberapa modul yang tersedia di aplikasi saat ini adalah:
-- Modul Manajemen Pengguna Aplikasi: pengguna dibagi adalam 3 level: Super Admin yang dapat mengelola semua data, Admin dapat mengelola semua data kecuali Manajemen Pengguna Plikasi. Level Eksekutif hanya dapat melihat data.
-- Modul Piket Fasilitas Pusat Data: Mencatat hasil pengecekan rutin harian fasilitas Pusat Data: Suhu Ruangan Server, PC operator, CCTV Pusat Data, Kondisi AC Ruangan, Panel Listrik Utama, Indikator UPS dan Baterai, Indikator Panel Distribusi Listrik, Kondisi Rack Server, serta Catatan Kejadian Harian.
-- Modul Manajemen Akses Server: berisi data server beserta spesifikasi hardware dan software terinstal
-- Modul Manajemen Alokasi IP Publik dan IP Lokal
+---
 
-## Infrastruktur Aplikasi
+## 📖 Tentang Aplikasi
 
-Aplikasi DCFMIS dibangun dalam 3 aplikasi berbeda yang terintegrasi:
-- Golang API menyediakan API yang diperlukan untuk pengelolaan data dari Aplikasi Nuxt Dashboard Admin dan Aplikasi Mobile
-Golang 1.25.12
-MySql 8.0.45  
-- Nuxt Dashboard Admin menyediakan fasilitas pengelolaan data berbasis Web
-nuxt 4.4.8
-vue 3.5.39
-vue-router 5.1.0
-- Flutter Mobile App digunakan untuk input dan update data oleh operator pusat data menggunakan pengakat mobile
-flutter 3.138.0
-dart 3.138.0
-sdk 3.11.4
+Data Center Facility Management Information System (DCFMIS) merupakan aplikasi yang dikembangkan untuk membantu pengelolaan operasional Pusat Data secara terintegrasi.
 
-## Keamanan Aplikasi dan Akses
+Aplikasi digunakan oleh Tim Pusat Data untuk melakukan monitoring, pencatatan, dan pengelolaan fasilitas pusat data secara rutin sehingga seluruh aktivitas operasional dapat terdokumentasi dengan baik.
 
-Untuk pengamanan data dilakukan pengaturan sebagai berikut:
-- Golang API hanya dapat diakses oleh sub domain aplikasi Nuxt Dashboard Admin dengan sub domain labs-dcfmis.kotabogor.go.id
-- Golang API dapat diakses Aplikasi Flutter Mobile dengan token
-- Data pengguna, data yang bersifat rahasia sebelum disimpan ke database akan diencript terlebih dahulu sehingga data tersimpan di database tidak dapat dibaca. Data yang di encript antara lain: nama lengkap, email, password, block IP, IP Server, Port, nama server, nama pusat data, software terinstall, kredensial akun
+---
 
-## Struktur Folder
+## ✨ Fitur Utama
 
-PusatData/
+### 👥 Manajemen Pengguna
+
+- Super Admin
+- Admin
+- Eksekutif
+
+Hak akses setiap level berbeda sesuai kewenangan masing-masing.
+
+---
+
+### 🏢 Piket Fasilitas Pusat Data
+
+Melakukan pencatatan kondisi:
+
+- Suhu ruang server
+- CCTV
+- PC Operator
+- AC
+- UPS
+- Panel Listrik
+- Rack Server
+- Catatan Harian
+
+---
+
+### 🖥️ Manajemen Server
+
+Menyimpan informasi:
+
+- Hardware Server
+- Software
+- Sistem Operasi
+- Lokasi
+- Rack
+- IP Address
+- Port
+- Status Server
+
+---
+
+### 🌐 Manajemen IP
+
+Mengelola:
+
+- IP Public
+- IP Lokal
+- Alokasi IP
+- Status penggunaan
+
+---
+
+# 🏗️ Arsitektur Sistem
+
+DCFMIS terdiri dari tiga aplikasi utama.
+
+```text
+                    +----------------+
+                    | Flutter Mobile |
+                    +--------+-------+
+                             |
+                             |
+                             |
++----------------+     REST API     +----------------------+
+| Nuxt Dashboard | <--------------> |      Golang API      |
++----------------+                  +----------+-----------+
+                                               |
+                                               |
+                                         +-----+------+
+                                         |   MySQL    |
+                                         +------------+
+```
+
+---
+
+# ⚙️ Teknologi
+
+| Komponen | Teknologi |
+|----------|------------|
+| Backend API | Golang 1.25.1 |
+| Framework | Gin |
+| ORM | GORM |
+| Database | MySQL 8.0.45 |
+| Dashboard | Nuxt 4 |
+| Frontend | Vue 3 |
+| Mobile | Flutter |
+| Authentication | JWT |
+| Server | Ubuntu 24.04 LTS |
+
+---
+
+# 📂 Struktur Folder
+
+```text
+DCFMIS/
+│
+├── README.md
+├── LICENSE
+├── docs/
+│   ├── images/
+│   ├── api.md
+│   ├── deployment.md
+│   └── database.md
 │
 ├── golang-api/
+│   ├── cmd/
+│   ├── config/
+│   ├── handlers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── go.mod
+│   └── go.sum
+│
 ├── dashboard/
-├── mobile/
-└── docs/
+│   ├── assets/
+│   ├── components/
+│   ├── composables/
+│   ├── pages/
+│   ├── public/
+│   ├── app.vue
+│   └── package.json
+│
+└── mobile/
+    ├── android/
+    ├── ios/
+    ├── lib/
+    ├── assets/
+    └── pubspec.yaml
+```
 
-## Demo Aplikasi Nuxt Dashboard Admin
+---
 
-Akses sub domain labs-dcfmis.kotabogor.go.id
-login dengan akun demo berikut:
-- User = demo_admin@gmail.com
-- Password = Demo12345!
-- User = demo_eksekutif@gmail.com
-- Password = Demo12345!
+# 🔐 Keamanan
 
-## Tentang Pengembang
+Implementasi keamanan pada aplikasi meliputi:
 
-Dikembangkan Oleh:
--- Saeful Hamdi
--- shamdi.rh@gmail.com
+- JWT Authentication
+- Role Based Access Control (RBAC)
+- AES Encryption untuk data sensitif
+- Password Hashing (bcrypt)
+- API hanya dapat diakses Dashboard dan Mobile
+- HTTPS/TLS
+- Audit Log
 
+Data yang dienkripsi:
+
+- Nama Lengkap
+- Email
+- Password
+- IP Server
+- Port
+- Nama Server
+- Nama Pusat Data
+- Software
+- Credential Server
+
+---
+
+# 🚀 Instalasi
+
+## Backend
+
+```bash
+cd golang-api
+go mod tidy
+go run .
+```
+
+---
+
+## Dashboard
+
+```bash
+cd dashboard
+npm install
+npm run dev
+```
+
+---
+
+## Flutter
+
+```bash
+cd mobile
+flutter pub get
+flutter run
+```
+
+---
+
+# 📷 Screenshot
+
+### Dashboard Login
+
+![Login](docs/images/login.png)
+
+### Dashboard Utama
+
+![Dashboard](docs/images/dashboard.png)
+
+### Mobile
+
+![Mobile](docs/images/mobile.png)
+
+---
+
+# 🌐 Demo
+
+URL
+
+```
+https://labs-dcfmis.kotabogor.go.id
+```
+
+Demo Account
+
+| Level | User |
+|--------|------|
+| Admin | demo_admin@gmail.com |
+| Eksekutif | demo_eksekutif@gmail.com |
+
+Password
+
+```
+Demo12345!
+```
+
+---
+
+# 📅 Roadmap
+
+- [x] Authentication
+- [x] User Management
+- [x] Monitoring Server
+- [x] Data Center Checklist
+- [ ] Notification WA
+- [ ] Monitoring SNMP
+- [ ] Grafana Integration
+- [ ] Backup Management
+
+---
+
+# 👨‍💻 Pengembang
+
+**Saeful Hamdi**
+
+Pranata Komputer Mahir  
+Dinas Komunikasi dan Informatika Kota Bogor
+
+📧 shamdi.rh@gmail.com
+
+---

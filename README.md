@@ -271,24 +271,24 @@ flutter run
     <td align="center">
         <img src="docs/images/manajemen-piket1.jpeg" width="200">
         <br>
-        Halaman Login 1
+        Halaman Mnajemen Piket
     </td>
     <td align="center">
         <img src="docs/images/manajemen-server.jpeg" width="200">
         <br>
-        Halaman Login 2
+        Halaman Manajemen Server
     </td>
 </tr>
 <tr>
     <td align="center">
         <img src="docs/images/manajemen-ip.jpeg" width="200">
         <br>
-        Splash Screen
+        Halaman Manajemen IP
     </td>
     <td align="center">
         <img src="docs/images/tentang-aplikasi.jpeg" width="200">
         <br>
-        Halaman Dashboard
+        Halaman Tentang Aplikasi
     </td>
 </tr>
 </table>

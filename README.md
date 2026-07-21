@@ -256,20 +256,18 @@ flutter run
         <br>
         Halaman Login 2
     </td>
-</tr>
-<tr>
     <td align="center">
         <img src="docs/images/splash.jpeg" width="200">
         <br>
         Splash Screen
     </td>
+</tr>
+<tr>
     <td align="center">
         <img src="docs/images/dashboard.jpeg" width="200">
         <br>
         Halaman Dashboard
     </td>
-</tr>
-<tr>
     <td align="center">
         <img src="docs/images/manajemen-piket1.jpeg" width="200">
         <br>

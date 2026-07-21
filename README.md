@@ -232,7 +232,7 @@ flutter run
 
 ### Dashboard Login
 
-![Login](docs/images/login.png)
+![Login](docs/images/login1.png)
 ![Login](docs/images/login2.png)
 
 ### Dashboard Utama dan Modul-modul;
@@ -244,14 +244,56 @@ flutter run
 
 ### Mobile
 
-![Mobile](docs/images/login1.jpeg)
-![Mobile](docs/images/login2.jpeg)
-![Mobile](docs/images/splash.jpeg)
-![Mobile](docs/images/dashboard.jpeg)
-![Mobile](docs/images/manajemen-piket.jpeg)
-![Mobile](docs/images/manajemen-server.jpeg)
-![Mobile](docs/images/manajemen-IP.jpeg)
-![Mobile](docs/images/tentang-aplikasi.jpeg)
+<table>
+<tr>
+    <td align="center">
+        <img src="docs/images/login1.jpeg" width="200">
+        <br>
+        Halaman Login 1
+    </td>
+    <td align="center">
+        <img src="docs/images/login2.jpeg" width="200">
+        <br>
+        Halaman Login 2
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <img src="docs/images/splash.jpeg" width="200">
+        <br>
+        Splash Screen
+    </td>
+    <td align="center">
+        <img src="docs/images/dashboard.jpeg" width="200">
+        <br>
+        Halaman Dashboard
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <img src="docs/images/manajemen-piket1.jpeg" width="200">
+        <br>
+        Halaman Login 1
+    </td>
+    <td align="center">
+        <img src="docs/images/manajemen-server.jpeg" width="200">
+        <br>
+        Halaman Login 2
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <img src="docs/images/manajemen-ip.jpeg" width="200">
+        <br>
+        Splash Screen
+    </td>
+    <td align="center">
+        <img src="docs/images/tentang-aplikasi.jpeg" width="200">
+        <br>
+        Halaman Dashboard
+    </td>
+</tr>
+</table>
 
 ---
 

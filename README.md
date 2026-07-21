@@ -43,14 +43,14 @@ PusatData/
 
 Akses sub domain labs-dcfmis.kotabogor.go.id
 login dengan akun demo berikut:
-User = demo_admin@gmail.com
-Password = Demo12345!
-User = demo_eksekutif@gmail.com
-Password = Demo12345!
+- User = demo_admin@gmail.com
+- Password = Demo12345!
+- User = demo_eksekutif@gmail.com
+- Password = Demo12345!
 
 ## Tentang Pengembang
 
 Dikembangkan Oleh:
-Saeful Hamdi
-shamdi.rh@gmail.com
+-- Saeful Hamdi
+-- shamdi.rh@gmail.com
 

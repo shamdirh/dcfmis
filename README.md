@@ -1,5 +1,6 @@
 # Data Center Facility Management Information System (DCFMIS)
 
+---
 Aplikasi Data Center Facility Management Information System (DCFMIS) ini dibangun untuk memudahkan Tim Pusat Data dalam melakukan pengecekan rutin harian fasilitas Pusat Data: Suhu Ruangan Server, PC operator, CCTV Pusat Data, Kondisi AC Ruangan, Panel Listrik Utama, Indikator UPS dan Baterai, Indikator Panel Distribusi Listrik, Kondisi Rack Server, serta Catatan Kejadian Harian.
 
 Beberapa modul yang tersedia di aplikasi saat ini adalah:
@@ -10,7 +11,7 @@ Beberapa modul yang tersedia di aplikasi saat ini adalah:
 ---
 
 ## Infrastruktur Aplikasi
-
+---
 Aplikasi DCFMIS dibangun dalam 3 aplikasi berbeda yang terintegrasi:
 - Golang API menyediakan API yang diperlukan untuk pengelolaan data dari Aplikasi Nuxt Dashboard Admin dan Aplikasi Mobile
 Golang 1.25.12
@@ -26,6 +27,7 @@ sdk 3.11.4
 ---
 
 ## Keamanan Aplikasi dan Akses
+---
 Untuk pengamanan data dilakukan pengaturan sebagai berikut:
 - Golang API hanya dapat diakses oleh sub domain aplikasi Nuxt Dashboard Admin dengan sub domain labs-dcfmis.kotabogor.go.id
 - Golang API dapat diakses Aplikasi Flutter Mobile dengan token
@@ -33,7 +35,7 @@ Untuk pengamanan data dilakukan pengaturan sebagai berikut:
 ---
 
 ## Struktur Folder
-
+---
 PusatData/
 │
 ├── golang-api/
@@ -44,7 +46,7 @@ PusatData/
 ---
 
 ## Demo Aplikasi Nuxt Dashboard Admin
-
+---
 Akses sub domain labs-dcfmis.kotabogor.go.id
 login dengan akun demo berikut:
 User = demo_admin@gmail.com
@@ -55,6 +57,8 @@ Password = Demo12345!
 ---
 
 ## Tentang Pengembang
+---
 Dikembangkan Oleh:
 Saeful Hamdi
 shamdi.rh@gmail.com
+---

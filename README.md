@@ -34,17 +34,17 @@ Untuk pengamanan data dilakukan pengaturan sebagai berikut:
 
 ## Struktur Folder
 
+PusatData/
+│
+├── golang-api/
+├── dashboard/
+├── mobile/
+└── docs/
 
 ---
+
 ## Demo Aplikasi Nuxt Dashboard Admin
 
-Akses sub domain labs-dcfmis.kotabogor.go.id
-Login dengan akun demo berikut:
-User Login = demo_admin@gmail.com
-Password  = Demo12345!
-User Login = demo_eksekutif@gmail.com
-Password  = Demo12345!
----
 Akses sub domain labs-dcfmis.kotabogor.go.id
 login dengan akun demo berikut:
 User = demo_admin@gmail.com

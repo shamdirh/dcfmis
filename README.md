@@ -31,6 +31,7 @@ Untuk pengamanan data dilakukan pengaturan sebagai berikut:
 - Golang API dapat diakses Aplikasi Flutter Mobile dengan token
 - Data pengguna, data yang bersifat rahasia sebelum disimpan ke database akan diencript terlebih dahulu sehingga data tersimpan di database tidak dapat dibaca. Data yang di encript antara lain: nama lengkap, email, password, block IP, IP Server, Port, nama server, nama pusat data, software terinstall, kredensial akun
 ---
+
 ## Struktur Folder
 
 
@@ -44,13 +45,13 @@ Password  = Demo12345!
 User Login = demo_eksekutif@gmail.com
 Password  = Demo12345!
 ---
-## Tentang Pengembang
 Akses sub domain labs-dcfmis.kotabogor.go.id
-Login dengan akun demo berikut:
-User Login = demo_admin@gmail.com
-Password  = Demo12345!
-User Login = demo_eksekutif@gmail.com
-Password  = Demo12345!
+login dengan akun demo berikut:
+User = demo_admin@gmail.com
+Password = Demo12345!
+User = demo_eksekutif@gmail.com
+Password = Demo12345!
+
 ---
 
 ## Tentang Pengembang

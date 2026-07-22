@@ -10,13 +10,13 @@ import (
 
 func ConnectDB() *sql.DB {
 	// Menghubungkan ke port custom 3309 dengan user non-root
-	dbUser := "pusdat_usr"
-	dbPass := "]:BnY-0726*Ba.!"
+	dbUser := "mcfmis_usr"
+	dbPass := "0oH-][Kq0Qwr!9b?{*}"
 	//dbUser := "root"
 	//dbPass := ""
 	dbHost := "127.0.0.1"
 	dbPort := "3306"
-	dbName := "pusdat_db"
+	dbName := "mcfmis_db"
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true", dbUser, dbPass, dbHost, dbPort, dbName)
 	db, err := sql.Open("mysql", dsn)

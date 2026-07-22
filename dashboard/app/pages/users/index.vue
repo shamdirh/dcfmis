@@ -128,13 +128,13 @@ import { ref, onMounted } from 'vue'
 definePageMeta({ middleware: 'auth' })
 
 //const API_URL = 'http://localhost:8080'
-//const API_URL = 'https://labs-api-dcfmis.kotabogor.go.id'
+//const API_URL = 'https://labs-api-dcfmis.net'
 const config = useRuntimeConfig()
 const API_URL = config.public.apiBase
 
 const headersConfig = {
   'Content-Type': 'application/json',
-  'X-App-Token': '[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]'
+  'X-App-Token': '[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]123'
 }
 
 const userNama = useCookie('user_nama')

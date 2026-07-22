@@ -8,11 +8,11 @@ import 'screens/piket_screen.dart';
 import 'screens/piket_input_screen.dart';
 
 //const String apiUrl = "http://localhost:8080"; 
-const String apiUrl = "https://labs-api-dcfmis.kotabogor.go.id"; 
+const String apiUrl = "https://labs-api-dcfmis.net"; 
 
 const Map<String, String> apiHeaders = {
   "Content-Type": "application/json",
-  "X-App-Token": "[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]"
+  "X-App-Token": "[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]123"
 };
 
 void main() {

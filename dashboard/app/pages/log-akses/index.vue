@@ -97,7 +97,7 @@ const API_URL = config.public.apiBase
 // Fetch data log dari backend Golang
 const { data: logs, pending } = await useFetch(`${API_URL}/api/logs`, {
   headers: {
-    'X-App-Token': '[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]'
+    'X-App-Token': '[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]123'
   },
   default: () => []
 })

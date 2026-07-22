@@ -14,7 +14,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-var MathSecretKey = []byte("S1mpu5d4t_M4t3m4t1k4_2026")
+var MathSecretKey = []byte("S1mpu5d4t_M4t3m4t1k4_2026-123")
 
 type AuthHandler struct {
 	DB *sql.DB

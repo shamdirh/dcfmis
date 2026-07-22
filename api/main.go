@@ -17,7 +17,7 @@ func middlewareKeamanan(next http.HandlerFunc) http.HandlerFunc {
 		origin := r.Header.Get("Origin")
 
 		// Izinkan localhost:3000 agar Bapak tetap bisa testing / ngoding di lokal
-		if origin == "https://labs-dcfmis.kotabogor.go.id" || origin == "http://localhost:3000" {
+		if origin == "https://labs-dcfmis.net" || origin == "http://localhost:3000" {
 			w.Header().Set("Access-Control-Allow-Origin", origin)
 		} else if origin != "" {
 			// Jika request datang dari browser/domain SELAIN yang diizinkan di atas -> BLOKIR
@@ -43,7 +43,7 @@ func middlewareKeamanan(next http.HandlerFunc) http.HandlerFunc {
 		// 3. Pengecekan API Token
 		token := r.Header.Get("X-App-Token")
 
-		if token != "[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]" {
+		if token != "[o0Ht1407!=5437ul=@K8R{*?zQL36;}0o]123" {
 			http.Error(w, "Akses Ilegal: Token tidak valid", http.StatusUnauthorized)
 			log.Printf("❌ [KEAMANAN GAGAL] Token Ditolak!\n")
 			return
@@ -147,4 +147,5 @@ func main() {
 		log.Fatalf("❌ Server gagal berjalan: %v", err)
 	}
 }
+
 // === API GOLANG - DCFMIS - Saeful Hamdi (shamdi.rh@gmail.com) ===

@@ -10,7 +10,7 @@ import (
 )
 
 // Kunci Rahasia 32 Byte untuk AES-256
-var AppSecretEncryptionKey = []byte("PusdatDiskominfo2026AESKeyS3cure")
+var AppSecretEncryptionKey = []byte("PusdatDiskominfo2026AESKeyS3cure123")
 
 // EncryptData mengenkripsi string menjadi Base64 cipher
 func EncryptData(text string) string {
